@@ -15,7 +15,7 @@ Les étapes pour lancer le projet :
   
   **Serveur Web
   
-  - Cliquer sur le lien heroku (application error)
+  - Cliquer sur le lien heroku (application error) : https://challenge48h-equipe35.herokuapp.com/
  
 ## Base de données
 
