@@ -23,32 +23,32 @@ La base de données se présente ainsi :
 
 ### Table « image »
 
-titre : varchar(255)
-auteur : varchar(255)
-urlphoto : text
-urlauteur : text
-dimension : text
-typelicence : text
-categorie : varchar(255)
-nom : varchar(255)
-mime : text
-motscles : varchar(255)
-→ primary key (nom)
+- titre : varchar(255)
+- auteur : varchar(255)
+- urlphoto : text
+- urlauteur : text
+- dimension : text
+- typelicence : text
+- categorie : varchar(255)
+- nom : varchar(255)
+- mime : text
+- motscles : varchar(255)
+- → primary key (nom)
 
 ### Table « membres »
 
-id : int → auto-increment
-pseudo : varchar(255)
-motdepasse : text
-→ primary key (id)
+- id : int → auto-increment
+- pseudo : varchar(255)
+- motdepasse : text
+- → primary key (id)
 
 ### Table « imagesusers »
 
-id : int
-nom : varchar(255)
-→ primary key (id)
-→ foreign key(id) references membres(id)
-→ foreign key(nom) references image(nom)
+- id : int
+- nom : varchar(255)
+- → primary key (id)
+- → foreign key(id) references membres(id)
+- → foreign key(nom) references image(nom)
 
 # Descriptif des pages
 
