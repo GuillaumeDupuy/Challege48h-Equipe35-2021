@@ -15,7 +15,11 @@ Les étapes pour lancer le projet :
   
   **Serveur Web
   
-  - Cliquer sur le lien heroku (application error) : https://challenge48h-equipe35.herokuapp.com/
+  - Activer votre environnements virtuel (Xampp ou Wampp) 
+  - Modifier les informations de connexion de la bdd dans connexionbdd.php
+  - Importer le fichier phototheque.sql dans phpmyadmin
+  - Cliquer sur le lien heroku : https://challenge48h-equipe35.herokuapp.com/accueil.php
+  - Naviguer sur le site Web
  
 ## Base de données
 
