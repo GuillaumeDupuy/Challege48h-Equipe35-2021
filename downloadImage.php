@@ -1,6 +1,6 @@
 <?php
 /* 
- * Ce script reçoit en mode GET l'url d'une image (sous licence CC)
+ * Ce script reçoit en mode GET l'url d'une image (sous licence Passion Froid)
  * Puis
  * - download de l'image dans le répertoire temporaire
  * - analyse des infos de base (taille, type)

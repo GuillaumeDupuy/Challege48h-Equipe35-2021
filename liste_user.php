@@ -12,6 +12,7 @@ if (isset($_SESSION['id'])) {
 
 	<!DOCTYPE html>
 	<span style="color: #FFFFFF;" font-family="Oswald" , serif;>
+	<!-- Affichera les éventuelles erreurs dans un commentaire HTML -->
 
 		<!-- Page des utilisateurs enregistrés -->
 

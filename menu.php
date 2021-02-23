@@ -20,7 +20,7 @@ echo
 		</ul>
 	</div>
 	<form id="barre" method="POST" action="page_recherche.php" >
-		<input type="search" placeholder="Ici les mots recherchés" id="mots" name="mots" />
+		<input type="search" placeholder="Rechercher vos photos" id="mots" name="mots" />
 		<button type="submit" name="rechercher">Rechercher</button>
 	</form>
 ';

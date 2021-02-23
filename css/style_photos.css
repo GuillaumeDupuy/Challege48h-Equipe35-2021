@@ -112,13 +112,13 @@ section {
 
 /*Liens */
 a:link {
-  text-decoration: none;
-  color: #fafafa;
+  text-decoration: blue;
+  color: #02006b;
 }
 
 a:visited {
   text-decoration: none;
-  color: gray;
+  color: rgb(255, 255, 255);
 }
 
 /* Informations images */

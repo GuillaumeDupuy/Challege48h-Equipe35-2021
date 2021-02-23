@@ -13,7 +13,8 @@ if (isset($_GET['id']) and ($_GET['id'] > 0)) {
 
 	<!DOCTYPE html>
 	<span style="color: #FFFFFF;" font-family="Oswald" , serif;>
-	
+		<!-- Affichera les éventuelles erreurs dans un commentaire HTML -->
+
 		<!-- Page du profil de l'utilisateur enregistré-->
 
 		<head>

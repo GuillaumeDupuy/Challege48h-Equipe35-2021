@@ -4,8 +4,9 @@ include 'connexionbdd.php';
 ?>
 <!DOCTYPE html>
 <span style="color: #FFFFFF;" font-family="Oswald" , serif;>
+<!-- Affichera les éventuelles erreurs dans un commentaire HTML -->
 
-	<!-- Page des catégories des images -->
+	<!-- Page des catégories des dossiers images -->
 
 	<head>
 		<meta charset="UTF-8" />
@@ -18,6 +19,7 @@ include 'connexionbdd.php';
 		<?php include 'menu.php'; ?>
 		<br>
 		<section>
+			<!-- tableau des différentes catégories dossiers images -->
 			<table id="album">
 				<tbody>
 					<tr>

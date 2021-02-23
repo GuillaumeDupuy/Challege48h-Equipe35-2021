@@ -29,6 +29,7 @@ if (isset($_POST['formconnexion'])) {
 
 <!DOCTYPE html>
 <span style="color: #FFFFFF;" font-family="Oswald" , serif;>
+<!-- Affichera les éventuelles erreurs dans un commentaire HTML -->
 
 	<!--Page de connexion-->
 	<head>

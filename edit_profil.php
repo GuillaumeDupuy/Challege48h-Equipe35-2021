@@ -3,12 +3,9 @@ session_start();
 
 include 'connexionbdd.php';
 
-/* Si l'utilisateur est connecté alors il peut modifier son compte sinon ...
-*/
-/*
-Si l'utilisateur clique sur le bouton "mettre à jour !" alors qu'il na rien changé il retourne sur son profil.
-Il peut modifier son pseudo et son mot de passe qui doit taper deux fois pour confirmer.
- */
+/* Si l'utilisateur est connecté alors il peut modifier son compte*/
+/*Si l'utilisateur clique sur le bouton "mettre à jour" alors qu'il n'a rien changé, il retourne sur son profil.
+Il peut modifier son username et son mot de passe qui doit taper deux fois pour confirmer.*/
 if (isset($_SESSION['id'])) {
 	$requser = $bdd->prepare("SELECT * FROM membres WHERE id=?");
 	$requser->execute(array($_SESSION['id']));
@@ -48,7 +45,8 @@ if (isset($_SESSION['id'])) {
 
 	<!DOCTYPE html>
 	<span style="color: #FFFFFF;" font-family="Oswald" , serif;>
-	
+	<!-- Affichera les éventuelles erreurs dans un commentaire HTML -->
+
 		<!-- Page d'edition du profil -->
 
 		<head>
@@ -90,7 +88,7 @@ if (isset($_SESSION['id'])) {
 		</html>
 	<?php
 }
-/* ... il est redirigé vers la page de connexion */ else {
+/* si il n'est pas connecté, il est redirigé vers la page de connexion */ else {
 	header("Location: login.php");
 }
 	?>

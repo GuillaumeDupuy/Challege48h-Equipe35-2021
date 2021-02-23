@@ -10,6 +10,7 @@ $numimgligne = 0; // numéro de l'image
 ?>
 <!DOCTYPE html>
 <span style="color: #FFFFFF;" font-family="Oswald" , serif;>
+<!-- Affichera les éventuelles erreurs dans un commentaire HTML -->
 
 	<!--Page de la catégorie produits-->
 
@@ -21,10 +22,11 @@ $numimgligne = 0; // numéro de l'image
 		<title>Produits</title>
 		<a href="./accueil.php"><img src="images/logo.png" alt="logo"></a>
 
+		<!-- style diaporama images -->
 		<link href="./css/style_photos.css" type="text/css" rel="stylesheet" title="style_photos" />
 		<script src="./scripts/diaporama.js"></script>
 
-		<!-- gallery -->
+		<!-- style gallery -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/bootstrap-gallery.css" />
 	</head>
@@ -36,10 +38,10 @@ $numimgligne = 0; // numéro de l'image
 
 		<!-- Affichage des vignettes + informations des images -->
 		<br>
-		<!-- <section>
-			<div id="photos"> -->
-		<?php
-		/*echo
+		<section>
+			<div id="photos">
+				<?php
+				echo
 				"<table>
 					<tr>";
 				$infos = $req->fetchAll();
@@ -50,33 +52,33 @@ $numimgligne = 0; // numéro de l'image
 					}
 					$numimgligne++;
 					echo
-					"<td>";*/
-		?>
-		<!-- <div class="info"><img src="<?php echo './images/photos produits/' . $info['nom'] ?>" />
+					"<td>";
+				?>
+					<div class="info"><img src="<?php echo './images/photos produits/' . $info['nom'] ?>" />
 						<span>
-							<h1 id="titrephoto"><?php echo $info['titre'] ?></h1> -->
-		<!-- <?php
-				/* Seulement si l'utilisateur est connecté, il peut ajouter une image à
+							<h1 id="titrephoto"><?php echo $info['titre'] ?></h1>
+							<?php
+							/* Seulement si l'utilisateur est connecté, il peut ajouter une image à
 						sa photothèque */
-				/*if (isset($_SESSION['id'])) {
+							if (isset($_SESSION['id'])) {
 								echo '
 							<form method="post" action="ajoutimg.php">
 								<button name="ajouter" type="submit">Ajouter image</button>
 							</form>
 							<br/>';
-							}*/
-				?>
-							<b>Auteur : </b><?php /*echo $info['auteur'] */ ?> <br />
-							<a href="<?php /*echo $info['urlauteur']*/ ?>"><b>Page web auteur</b></a> <br /><br />
-							<a href="<?php /*echo $info['urlphoto'] */ ?>"><b>Image originale</b></a> <br />
-							<b>Dimensions : </b><?php /*echo $info['dimension']*/ ?> px <br />
-							<b>Type MIME : </b><?php /*echo $info['mime'] */ ?><br />
-							<b>Type de licence CC : </b><?php /*echo $info['typelicence']*/ ?> <br /><br />
-							<b>Catégorie(s) : </b><?php /*echo $info['categorie'] */ ?> <br />
-							<b>Mots clés : </b><?php /*echo $info['motscles']*/ ?> <br />
+							}
+							?>
+							<b>Auteur : </b><?php echo $info['auteur']  ?> <br />
+							<a href="<?php echo $info['urlauteur'] ?>"><b>Page web auteur</b></a> <br /><br />
+							<a href="<?php echo $info['urlphoto'] ?>"><b>Image originale</b></a> <br />
+							<b>Dimensions : </b><?php echo $info['dimension'] ?> px <br />
+							<b>Type MIME : </b><?php echo $info['mime']  ?><br />
+							<b>Type de licence CC : </b><?php echo $info['typelicence'] ?> <br /><br />
+							<b>Catégorie(s) : </b><?php echo $info['categorie']  ?> <br />
+							<b>Mots clés : </b><?php echo $info['motscles'] ?> <br />
 						</span>
 					</div> -->
-		<?php /*
+				<?php
 					echo
 					"</td>";
 				}
@@ -84,20 +86,20 @@ $numimgligne = 0; // numéro de l'image
 				echo
 				"</tr>
 					</table>";
-				*/
-		?>
 
-		</div>
+				?>
+
+			</div>
 		</section>
 
 		<!-- Diaporama -->
-		<!-- <div id="slider">
+		<div id="slider">
 			<div id="slides">
 				<?php
-				/*echo '<figure>
+				echo '<figure>
 					<img src="' . $infos[0]['urlphoto'] . '" />
 					<figcaption>' . $infos[0]['titre'] . '</figcaption>
-				</figure>';*/
+				</figure>';
 				?>
 			</div>
 			<img id="croix" src="images/croix.png" />
@@ -106,8 +108,9 @@ $numimgligne = 0; // numéro de l'image
 				<img id="button_right" src="images/right.png" />
 			</div>
 
-		</div> -->
+		</div>
 
+		<!-- div gallery image -->
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-6 col-sm-3">
@@ -193,6 +196,8 @@ $numimgligne = 0; // numéro de l'image
 
 			</div>
 		</div>
+
+		<!-- scripts js gallery -->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
